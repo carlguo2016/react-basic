@@ -106,7 +106,7 @@ import { render } from "react-dom";
 //     }
 // }
 // import { Router, Route, browserHistory, IndexRoute } from "react-router";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import { Home } from "./components/Home";
 import { User } from "./components/User";
@@ -118,7 +118,7 @@ class App extends React.Component {
     render() {
 
         return (
-            <Router>
+            <HashRouter>
                 <div>
                     <div className="container">
                         <div className="row">
@@ -135,7 +135,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-            </Router>
+            </HashRouter>
         )
     };
 }
